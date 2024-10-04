@@ -1,0 +1,34 @@
+.cover_section {
+  width: 100%;
+  height: 800px;
+  background-color: #9a9a9a5d;
+}
+
+.home-heading {
+  text-transform: uppercase;
+  color: black;
+  font-family: gilroy-medium;
+}
+
+.context {
+  font-family: maison;
+  font-size: 40px;
+  color: black;
+}
+
+.home_title {
+  margin-bottom: 100px;
+}
+
+.home_cards {
+  gap: 60px;
+  margin-top: 100px;
+}
+
+.left_card {
+  width: 45%;
+}
+
+.right_card {
+  width: 55%;
+}

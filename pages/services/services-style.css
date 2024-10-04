@@ -1,0 +1,57 @@
+.services-cover-container {
+  width: 100%;
+  height: 850px;
+}
+
+.services-cover-container img {
+  width: 100%;
+  height: 100%;
+}
+.branding-section {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.branding-section-container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.branding-left-side {
+  width: 40%;
+  text-transform: uppercase;
+  font-size: 80px;
+  font-family: gilroy-medium;
+  line-height: 100px;
+}
+
+.branding-right-side {
+  width: 60%;
+  display: flex;
+  align-self: self-start;
+  font-family: maison;
+  font-size: 20px;
+}
+
+.stories-section {
+  margin-top: 100px;
+}
+
+.stories-section-tile {
+  letter-spacing: 1px;
+  line-height: 100px;
+  font-size: 72px;
+  font-family: gilroy-medium;
+  text-transform: uppercase;
+  word-spacing: 10px;
+}
+
+.stories-section-subtile {
+  margin-top: 40px;
+  font-family: maison;
+  font-size: 32px;
+  margin-bottom: 100px;
+}
