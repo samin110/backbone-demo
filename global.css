@@ -27,10 +27,22 @@
   src: url("./assets/fonts/MaisonNeue-Book.woff2");
 }
 
+:root {
+  --main-color: "#06050a";
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #fcfcfc !important;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* body {
@@ -45,10 +57,103 @@ a:hover {
     auto;
 } */
 
-.custom-container {
-}
-
 .nav_active {
   font-weight: 700;
   color: red;
+}
+
+.container_section {
+  padding: 0 80px;
+}
+
+.nav_item {
+  font-family: gilroy-regular;
+}
+.text_underline::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  right: 0;
+  background-color: white;
+  position: absolute;
+  bottom: 15%;
+  transform: translateX(0); /* Initially hidden off-screen */
+}
+
+.text_underline:after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  position: absolute;
+  bottom: 15%;
+}
+
+.text_underline:hover:before {
+  animation: underline 0.4s ease-in-out forwards;
+}
+
+.text_underline:hover:after {
+  animation: underline_after 0.4s 0.4s ease-in-out forwards;
+}
+
+.text_underline {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Breakpoints */
+/* @media only screen and (max-width: 320px) */
+/* @media only screen and (max-width: 414px) */
+@media only screen and (max-width: 767px) {
+  .container_section {
+    padding: 0 24px;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .container_section {
+    padding: 0 32px;
+  }
+}
+@media only screen and (max-width: 1279px) and (min-width: 1024px) {
+  .container_section {
+    padding: 0 32px;
+  }
+}
+/* @media only screen and (max-width: 1279px) and (min-width: 1024px) */
+@media only screen and (max-width: 1439px) and (min-width: 1280px) {
+  .container_section {
+    padding: 0 48px;
+  }
+}
+
+@media only screen and (max-width: 1509px) and (min-width: 1440px) {
+  .container_section {
+    padding: 0 56px;
+  }
+}
+@media only screen and (max-width: 1919px) and (min-width: 1510px) {
+  .container_section {
+    padding: 0 64px;
+  }
+}
+
+@keyframes underline {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes underline_after {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
