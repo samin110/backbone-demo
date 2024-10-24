@@ -31,11 +31,9 @@
   </head>
 
   <body class="">
-    <header class="container_section">
+    <header class="container_section" id="navbar">
       <!-- place navbar here -->
-      <ul
-        class="nav py-4 d-flex border-bottom border-black justify-content-between w-100"
-      >
+      <ul class="nav_wrapper">
         <li class="nav-item d-flex align-items-center">
           <a class="active" href="/pages/home/home.html" aria-current="page">
             <img
@@ -80,6 +78,7 @@
           </div>
         </div>
       </ul>
+      <div class="divider"></div>
     </header>
 
     <!-- sidebar menu -->
@@ -95,10 +94,34 @@
       </div>
 
       <div class="drawer_items">
-        <a href="">works</a>
-        <a href="">services</a>
-        <a href="">awards</a>
-        <a href="">press</a>
+        <a
+          href=""
+          class="item_delay"
+          id="animate"
+          data-animate-class="show_fade_animate"
+          >works</a
+        >
+        <a
+          href=""
+          class="item_delay"
+          id="animate"
+          data-animate-class="show_fade_animate"
+          >services</a
+        >
+        <a
+          href=""
+          class="item_delay"
+          id="animate"
+          data-animate-class="show_fade_animate"
+          >awards</a
+        >
+        <a
+          href=""
+          class="item_delay"
+          id="animate"
+          data-animate-class="show_fade_animate"
+          >press</a
+        >
       </div>
 
       <div class="first_column">
@@ -125,145 +148,203 @@
       </div>
     </div>
 
-    <main class="h-25 container_section">
-      <h1 class="heading">WORKS</h1>
+    <main class="container_section">
+      <div class="" id="title">
+        <h1 class="heading">WORKS</h1>
+      </div>
 
       <div class="tabs_container">
-        <p class="tab active" data-tab="1">ALL</p>
-        <p class="tab" data-tab="2">Branding Services</p>
-        <p class="tab" data-tab="3">Rebranding & Redesign</p>
-        <p class="tab" data-tab="4">Product design</p>
-        <p class="tab" data-tab="5">Packaging design</p>
+        <p class="tab active item_delay" data-tab="1">ALL</p>
+        <p class="tab item_delay" data-tab="2">Branding Services</p>
+        <p class="tab item_delay" data-tab="3">Rebranding & Redesign</p>
+        <p class="tab item_delay" data-tab="4">Product design</p>
+        <p class="tab item_delay" data-tab="5">Packaging design</p>
       </div>
 
       <!-- ALL -->
-      <div class="cards_container tab_content active" id="1">
-        <div class="tab-pane fade show active col">
-          <div class="img_container">
-            <img
-              src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2FTUFF_1_thumbnail_1138x962-min.jpg&w=1920&q=75"
-            />
+      <div class="tab_content active" id="1">
+        <div class="cards_container">
+          <div class="overflow-hidden">
+            <div
+              class="card_container"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              <div class="img_container">
+                <!-- first image -->
+                <img
+                  class="image_1"
+                  src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2FTUFF_1_thumbnail_1138x962-min.jpg&w=1920&q=75"
+                />
+
+                <!-- second image -->
+                <img
+                  class="image_2"
+                  src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2FMatenits_02_thumbnail_1138x962.jpg&w=1920&q=75"
+                />
+
+                <!-- third image -->
+                <img
+                  class="image_3"
+                  src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2FTUFF_1_thumbnail_1138x962-min.jpg&w=1920&q=75"
+                />
+              </div>
+
+              <div class="card_subjects">
+                <p class="card_title text_underline">TUFF</p>
+                <p class="card_title_right">PRODUCT DESIGN</p>
+              </div>
+            </div>
           </div>
 
-          <div class="d-flex align-items-center mt-4 justify-content-between">
-            <p class="card_title">TUFF</p>
-            <p class="card_title_right">PRODUCT DESIGN</p>
+          <div class="overflow-hidden">
+            <div
+              class="card_container"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              <div class="img_container">
+                <img
+                  src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2F1138x962-min-9-1.jpg&w=1920&q=75"
+                />
+              </div>
+
+              <div class="card_subjects">
+                <p class="card_title text_underline">ONCE</p>
+                <p class="card_title_right">
+                  BRANDING SERVICES / PACKING DESIGN
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="tab-pane fade show active col">
-          <div class="img_container">
-            <img
-              src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2F1138x962-min-9-1.jpg&w=1920&q=75"
-            />
+        <div class="cards_container">
+          <div class="overflow-hidden">
+            <div
+              class="card_container"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              <div class="img_container">
+                <img
+                  src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2FWF_02_thumbnail_1138x962-min.jpg&w=1920&q=75"
+                />
+              </div>
+
+              <div class="card_subjects">
+                <p class="card_title text_underline">White Flag</p>
+                <p class="card_title_right">Packaging design</p>
+              </div>
+            </div>
           </div>
 
-          <div class="d-flex align-items-center mt-4 justify-content-between">
-            <p class="card_title">ONCE</p>
-            <p class="card_title_right">BRANDING SERVICES / PACKING DESIGN</p>
+          <div class="overflow-hidden">
+            <div
+              class="card_container"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              <div class="img_container">
+                <img
+                  src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2F1138x962-min-96.jpg&w=1920&q=75"
+                />
+              </div>
+
+              <div class="card_subjects">
+                <p class="card_title text_underline">ONCE</p>
+                <p class="card_title_right">
+                  BRANDING SERVICES / PACKING DESIGN
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="tab-pane fade show active col">
-          <div class="img_container">
-            <img
-              src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2FWF_02_thumbnail_1138x962-min.jpg&w=1920&q=75"
-            />
+        <div class="cards_container">
+          <div class="overflow-hidden">
+            <div
+              class="card_container"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              <div class="img_container">
+                <img
+                  src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2FBarista_02_thumbnail_1138x962-min.jpg&w=1920&q=75"
+                />
+              </div>
+
+              <div class="card_subjects">
+                <p class="card_title text_underline">TUFF</p>
+                <p class="card_title_right">PRODUCT DESIGN</p>
+              </div>
+            </div>
           </div>
 
-          <div class="d-flex align-items-center mt-4 justify-content-between">
-            <p class="card_title">White Flag</p>
-            <p class="card_title_right">Packaging design</p>
+          <div class="overflow-hidden">
+            <div
+              class="card_container"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              <div class="img_container">
+                <img
+                  src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2F1138x962-min-9-1.jpg&w=1920&q=75"
+                />
+              </div>
+
+              <div class="card_subjects">
+                <p class="card_title text_underline">ONCE</p>
+                <p class="card_title_right">
+                  BRANDING SERVICES / PACKING DESIGN
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="tab-pane fade show active col">
-          <div class="img_container">
-            <img
-              src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2F1138x962-min-96.jpg&w=1920&q=75"
-            />
+        <div class="cards_container">
+          <div class="overflow-hidden">
+            <div
+              class="card_container"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              <div class="img_container">
+                <img
+                  src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2F1138x962-min-21.jpg&w=1920&q=75"
+                />
+              </div>
+
+              <div class="card_subjects">
+                <p class="card_title text_underline">White Flag</p>
+                <p class="card_title_right">Packaging design</p>
+              </div>
+            </div>
           </div>
 
-          <div class="d-flex align-items-center mt-4 justify-content-between">
-            <p class="card_title">ONCE</p>
-            <p class="card_title_right">BRANDING SERVICES / PACKING DESIGN</p>
+          <div class="overflow-hidden">
+            <div
+              class="card_container"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              <div class="img_container">
+                <img
+                  src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2F1138x962-min-96.jpg&w=1920&q=75"
+                />
+              </div>
+
+              <div class="card_subjects">
+                <p class="card_title">ONCE</p>
+                <p class="card_title_right">
+                  BRANDING SERVICES / PACKING DESIGN
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="tab-pane fade show active col">
-          <div class="img_container">
-            <img
-              src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2FBarista_02_thumbnail_1138x962-min.jpg&w=1920&q=75"
-            />
-          </div>
-
-          <div class="d-flex align-items-center mt-4 justify-content-between">
-            <p class="card_title">TUFF</p>
-            <p class="card_title_right">PRODUCT DESIGN</p>
-          </div>
-        </div>
-
-        <div class="tab-pane fade show active col">
-          <div class="img_container">
-            <img
-              src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2F1138x962-min-9-1.jpg&w=1920&q=75"
-            />
-          </div>
-
-          <div class="d-flex align-items-center mt-4 justify-content-between">
-            <p class="card_title">ONCE</p>
-            <p class="card_title_right">BRANDING SERVICES / PACKING DESIGN</p>
-          </div>
-        </div>
-        <!-- </div> -->
-
-        <!-- <div
-          class="tab-content cards_container mt-5 row gap-3"
-          id="pills-tabContent"
-        > -->
-        <div
-          class="tab-pane fade show active col"
-          id="pills-home"
-          role="tabpanel"
-          aria-labelledby="pills-home-tab"
-          tabindex="0"
-        >
-          <div class="img_container">
-            <img
-              src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2F1138x962-min-21.jpg&w=1920&q=75"
-            />
-          </div>
-
-          <div class="d-flex align-items-center mt-4 justify-content-between">
-            <p class="card_title">White Flag</p>
-            <p class="card_title_right">Packaging design</p>
-          </div>
-        </div>
-
-        <div
-          class="tab-pane fade show active col"
-          id="pills-home"
-          role="tabpanel"
-          aria-labelledby="pills-home-tab"
-          tabindex="1"
-        >
-          <div class="img_container">
-            <img
-              src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2F1138x962-min-96.jpg&w=1920&q=75"
-            />
-          </div>
-
-          <div class="d-flex align-items-center mt-4 justify-content-between">
-            <p class="card_title">ONCE</p>
-            <p class="card_title_right">BRANDING SERVICES / PACKING DESIGN</p>
-          </div>
-        </div>
-        <!-- </div> -->
       </div>
-
-      <div class="tab_content" id="2">123454</div>
-
-      <div class="tab_content" id="3">12sdfsdf3454</div>
     </main>
 
     <!-- Footer Section -->
@@ -273,25 +354,65 @@
           <div class="first_column">
             <!-- contact info -->
             <div class="contact_info">
-              <a href="" class="contact_item text_underline"
+              <a
+                href=""
+                class="contact_item text_underline"
+                id="animate"
+                data-animate-class="show_fade_animate"
                 >info@backbonebranding.com</a
               >
-              <a href="" class="contact_item text_underline"
+              <a
+                href=""
+                class="contact_item text_underline"
+                id="animate"
+                data-animate-class="show_fade_animate"
                 >pr@backbonebranding.com</a
               >
-              <a href="" class="contact_item text_underline"
+              <a
+                href=""
+                class="contact_item text_underline"
+                id="animate"
+                data-animate-class="show_fade_animate"
                 >+ 374 91 366 008</a
               >
             </div>
 
             <div class="footer_container_icons">
               <a href="">
-                <i class="bi bi-facebook footer_icon"></i>
+                <i
+                  class="bi bi-facebook footer_icon item_delay"
+                  id="animate"
+                  data-animate-class="show_fade_animate"
+                ></i>
               </a>
-              <a href=""><i class="bi bi-behance footer_icon"></i></a>
-              <a href=""><i class="bi bi-instagram footer_icon"></i></a>
-              <a href=""><i class="bi bi-pinterest footer_icon"></i></a>
-              <a href=""><i class="bi bi-linkedin footer_icon"></i></a>
+              <a href=""
+                ><i
+                  class="bi bi-behance footer_icon item_delay"
+                  id="animate"
+                  data-animate-class="show_fade_animate"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="bi bi-instagram footer_icon item_delay"
+                  id="animate"
+                  data-animate-class="show_fade_animate"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="bi bi-pinterest footer_icon item_delay"
+                  id="animate"
+                  data-animate-class="show_fade_animate"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="bi bi-linkedin footer_icon item_delay"
+                  id="animate"
+                  data-animate-class="show_fade_animate"
+                ></i
+              ></a>
             </div>
           </div>
 
@@ -299,13 +420,37 @@
           <!-- <div class=""> -->
           <ul class="second_column">
             <li class="second_column_items">
-              <a href="http://" class="footer_item text_underline">WORKS</a>
-              <a href="http://" class="footer_item text_underline">SERVICES</a>
+              <a
+                href="http://"
+                class="footer_item text_underline"
+                id="animate"
+                data-animate-class="show_fade_animate"
+                >WORKS</a
+              >
+              <a
+                href="http://"
+                class="footer_item text_underline"
+                id="animate"
+                data-animate-class="show_fade_animate"
+                >SERVICES</a
+              >
             </li>
 
             <li class="second_column_items">
-              <a href="http://" class="footer_item text_underline">AWARDS</a>
-              <a href="http://" class="footer_item text_underline">PRESS</a>
+              <a
+                href="http://"
+                class="footer_item text_underline"
+                id="animate"
+                data-animate-class="show_fade_animate"
+                >AWARDS</a
+              >
+              <a
+                href="http://"
+                class="footer_item text_underline"
+                id="animate"
+                data-animate-class="show_fade_animate"
+                >PRESS</a
+              >
             </li>
           </ul>
           <!-- </div> -->

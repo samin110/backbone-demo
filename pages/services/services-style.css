@@ -1,6 +1,8 @@
 .services-cover-container {
   width: 100%;
-  height: 850px;
+  height: auto;
+  overflow: hidden;
+  opacity: 0;
 }
 
 .services-cover-container img {
@@ -17,7 +19,7 @@
 .branding-section-container {
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 8%;
 }
 
 .branding-left-side {
@@ -25,7 +27,8 @@
   text-transform: uppercase;
   font-size: 80px;
   font-family: gilroy-medium;
-  line-height: 100px;
+  line-height: 1.2;
+  color: "#06050a";
 }
 
 .branding-right-side {
@@ -33,7 +36,7 @@
   display: flex;
   align-self: self-start;
   font-family: maison;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .stories-section {
@@ -54,4 +57,69 @@
   font-family: maison;
   font-size: 32px;
   margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 320px) {
+  .branding-left-side {
+    font-size: 28px !important;
+    width: 100% !important;
+    line-height: 1.2;
+  }
+  .branding-right-side {
+    margin-top: 30px;
+    font-size: 12px !important;
+  }
+}
+
+@media only screen and (max-width: 766px) and (min-width: 321px) {
+  .branding-left-side {
+    font-size: 26px !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .branding-left-side {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .branding-right-side {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .branding-left-side {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .branding-left-side,
+  .branding-right-side {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1279px) and (min-width: 1024px) {
+  .branding-left-side {
+    font-size: 44px;
+  }
+  .branding-right-side {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1509px) and (min-width: 1280px) {
+  .branding-left-side {
+    font-size: 60px;
+  }
+  .branding-right-side {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1919px) and (min-width: 1510px) {
+  .branding-left-side {
+    font-size: 64px;
+  }
 }

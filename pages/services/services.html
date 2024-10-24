@@ -31,11 +31,9 @@
   </head>
 
   <body class="">
-    <header class="container-fluid px-5">
+    <header class="container_section" id="navbar">
       <!-- place navbar here -->
-      <ul
-        class="nav py-4 d-flex justify-content-between border-bottom border-black w-100"
-      >
+      <ul class="nav_wrapper">
         <li class="nav-item d-flex align-items-center">
           <a class="active" href="/pages/home/home.html" aria-current="page">
             <img
@@ -45,11 +43,11 @@
           </a>
         </li>
 
-        <li class="d-flex align-items-center text-xl-start">
-          <ul class="d-flex align-items-center gap-5 nav fs-4 text-black">
+        <li class="nav_items_container">
+          <ul class="d-flex align-items-center gap-5 nav">
             <li>
               <a
-                class="nav-link text-black"
+                class="nav_item"
                 id="nav"
                 href="http://127.0.0.1:5500/pages/works/works.html"
               >
@@ -57,39 +55,119 @@
               </a>
             </li>
             <li>
-              <a
-                class="nav-link text-black"
-                id="nav"
-                href="../services/services.html"
-              >
+              <a class="nav_item" id="nav" href="../services/services.html">
                 SERVICES
               </a>
             </li>
             <li>
-              <a class="nav-link text-black" id="nav" href="../press/press.html"
-                >PRESS</a
-              >
+              <a class="nav_item" id="nav" href="../press/press.html">PRESS</a>
             </li>
             <li>
-              <a class="nav-link text-black" id="nav" href="#">AWARDS</a>
+              <a class="nav_item" id="nav" href="#">AWARDS</a>
             </li>
           </ul>
         </li>
+
+        <!-- Burger Menu Section -->
+        <!-- Burger Menu Icon -->
+        <div class="burger_icons_container" id="burger_menu">
+          <div class="first_child"></div>
+          <div class="second_child"></div>
+          <div class="third_child">
+            <div></div>
+          </div>
+        </div>
       </ul>
+      <div class="divider"></div>
     </header>
 
+    <!-- sidebar menu -->
+    <div class="drawer_menu_container" id="drawer_menu_container">
+      <div class="drawer_header">
+        <a class="active" href="/pages/home/home.html" aria-current="page">
+          <img src="https://backbonebranding.com/logo/logoLight.svg" />
+        </a>
+
+        <button class="close_icon" id="close_drawer_menu">
+          <i class="bi bi-x"></i>
+        </button>
+      </div>
+
+      <div class="drawer_items">
+        <a
+          href=""
+          class="item_delay"
+          id="animate"
+          data-animate-class="show_fade_animate"
+          >works</a
+        >
+        <a
+          href=""
+          class="item_delay"
+          id="animate"
+          data-animate-class="show_fade_animate"
+          >services</a
+        >
+        <a
+          href=""
+          class="item_delay"
+          id="animate"
+          data-animate-class="show_fade_animate"
+          >awards</a
+        >
+        <a
+          href=""
+          class="item_delay"
+          id="animate"
+          data-animate-class="show_fade_animate"
+          >press</a
+        >
+      </div>
+
+      <div class="first_column">
+        <!-- contact info -->
+        <div class="contact_info">
+          <a href="" class="contact_item text_underline"
+            >info@backbonebranding.com</a
+          >
+          <a href="" class="contact_item text_underline"
+            >pr@backbonebranding.com</a
+          >
+          <a href="" class="contact_item text_underline">+ 374 91 366 008</a>
+        </div>
+
+        <div class="drawer_icons">
+          <a href="">
+            <i class="bi bi-facebook footer_icon"></i>
+          </a>
+          <a href=""><i class="bi bi-behance footer_icon"></i></a>
+          <a href=""><i class="bi bi-instagram footer_icon"></i></a>
+          <a href=""><i class="bi bi-pinterest footer_icon"></i></a>
+          <a href=""><i class="bi bi-linkedin footer_icon"></i></a>
+        </div>
+      </div>
+    </div>
+
     <!-- Main Section -->
-    <main class="container-fluid px-5 h-25">
-      <h1 class="heading home-heading">services</h1>
+    <main class="container_section">
+      <div class="overflow-hidden" id="title">
+        <h1 class="heading mb-4">SERVICES</h1>
+      </div>
 
-      <p class="context w-75">
-        Mastering a wide range of competencies makes us the “Swiss knife” of the
-        design business. Our expertise goes beyond conventional design services,
-        as we also specialize in the conception and production of complex
-        packaging solutions and unorthodox product designs.
-      </p>
+      <div class="overflow-hidden">
+        <p class="header_text" id="animate" data-animate-class="show_animate">
+          Mastering a wide range of competencies makes us the “Swiss knife” of
+          the design business. Our expertise goes beyond conventional design
+          services, as we also specialize in the conception and production of
+          complex packaging solutions and unorthodox product designs.
+        </p>
+      </div>
 
-      <div class="services-cover-container mt-5">
+      <div
+        class="services-cover-container mt-5 item_delay"
+        id="animate"
+        data-animate-class="show_animate"
+      >
         <img
           src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2FServices.png&w=1920&q=75"
         />
@@ -132,50 +210,6 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="footer">
-      <div class="bg-black px-5">
-        <div class="d-flex pt-5">
-          <!-- contact info -->
-          <div class="footer_links">
-            <a href="" class="footer_link">info@backbonebranding.com</a>
-            <a href="" class="footer_link">pr@backbonebranding.com</a>
-            <a href="" class="footer_link">+ 374 91 366 008</a>
-          </div>
-
-          <!-- nav items -->
-          <div class="footer_container_items d-flex gap-5">
-            <ul class="gap-5 d-flex">
-              <li class="footer_items d-flex flex-column me-5">
-                <a href="http://" class="footer_item">WORKS</a>
-                <a href="http://" class="footer_item">SERVICES</a>
-              </li>
-
-              <li class="footer_items d-flex flex-column">
-                <a href="http://" class="footer_item">AWARDS</a>
-                <a href="http://" class="footer_item">PRESS</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Social Icons -->
-        <div class="footer_container_icons">
-          <a href="">
-            <i class="bi bi-facebook footer_icons"></i>
-          </a>
-          <a href=""><i class="bi bi-behance footer_icons"></i></a>
-          <a href=""><i class="bi bi-instagram footer_icons"></i></a>
-          <a href=""><i class="bi bi-pinterest footer_icons"></i></a>
-          <a href=""><i class="bi bi-linkedin footer_icons"></i></a>
-        </div>
-
-        <!-- Copyright section -->
-        <div class="d-flex justify-content-between copyright-section">
-          <p>© ALL RIGHTS RESERVED 2024</p>
-          <p>BY CONCEPT STUDIO</p>
-        </div>
-      </div>
-    </footer>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script
