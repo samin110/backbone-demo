@@ -28,7 +28,7 @@
 }
 
 :root {
-  --main-color: "#06050a";
+  --main-color: #06050a;
 }
 
 * {
@@ -45,6 +45,7 @@ body {
   font-size: 32px;
   color: var(--main-color);
   font-family: maison;
+  opacity: 0;
 }
 
 a {
@@ -130,6 +131,11 @@ a:hover {
   .container_section {
     padding: 0 24px;
   }
+
+  .text_underline:after,
+  .text_underline:before {
+    bottom: 10%;
+  }
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .header_text {
@@ -182,3 +188,28 @@ a:hover {
     width: 100%;
   }
 }
+
+/* Breakpoints */
+/* @media only screen and (max-width: 320px) {
+}
+@media only screen and (max-width: 414px) {
+}
+@media only screen and (max-width: 767px) {
+
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+
+}
+@media only screen and (max-width: 1279px) and (min-width: 1024px) {
+
+}
+@media only screen and (max-width: 1439px) and (min-width: 1280px) {
+
+}
+
+@media only screen and (max-width: 1509px) and (min-width: 1440px) {
+
+}
+@media only screen and (max-width: 1919px) and (min-width: 1510px) {
+
+} */

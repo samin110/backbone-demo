@@ -1,9 +1,10 @@
-const navItem = document.querySelectorAll("#nav");
+const navItem = document.querySelectorAll(".nav_item");
 
 const pathname = window.location.pathname;
 
 navItem.forEach((i) => {
   if (pathname.includes(i.textContent.trim().toLowerCase())) {
+    console.log(i);
     i.style.fontWeight = "600";
   }
 });
@@ -25,7 +26,7 @@ function openMenu() {
 
 // Close Drawer Menu
 const closeDrawerMenuIcon = document.getElementById("close_drawer_menu");
-closeDrawerMenuIcon.addEventListener("click", closeMenu);
+closeDrawerMenuIcon?.addEventListener("click", closeMenu);
 
 function closeMenu() {
   includeAnimation.forEach((element) => {
@@ -70,10 +71,10 @@ function showNavbar() {
 
   if (currentScrollY < lastScrollY) {
     navbar?.classList?.add("show");
-    title.style.paddingTop = "80px";
+    title ? (title.style.paddingTop = "80px") : null;
   } else {
     navbar?.classList?.remove("show");
-    title.style.paddingTop = "0px";
+    title ? (title.style.paddingTop = "0px") : null;
   }
 
   lastScrollY = currentScrollY;
@@ -94,7 +95,7 @@ function appearAnimation() {
         }
       });
     },
-    { threshold: 0 }
+    { threshold: 0.2 }
   );
 
   includeAnimation.forEach((element) => {
@@ -113,5 +114,5 @@ let delay = 0;
 items.forEach((item, index) => {
   item.style.animationDelay = `${delay}s`;
 
-  delay += 0.1;
+  delay += 0.08;
 });

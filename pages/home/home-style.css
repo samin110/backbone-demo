@@ -8,6 +8,7 @@
   text-transform: uppercase;
   color: black;
   font-family: gilroy-medium;
+  opacity: 0;
 }
 
 .context {
@@ -21,14 +22,79 @@
 }
 
 .home_cards {
-  gap: 60px;
-  margin-top: 100px;
+  gap: 3.5%;
+  margin-top: 20px;
+}
+
+.cards_section .home_cards:nth-child(even) .right_card {
+  width: 42%;
+}
+
+.cards_section .home_cards:nth-child(even) .left_card {
+  width: 56%;
+}
+
+.cards_section :nth-child(even) :last-child {
+  animation-delay: 0.1s;
+}
+
+.right_card:last-child {
+  animation-delay: 0.1s;
 }
 
 .left_card {
-  width: 45%;
+  width: 42%;
+  opacity: 0;
 }
 
 .right_card {
-  width: 55%;
+  width: 56%;
+  opacity: 0;
+}
+
+.all_works_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  margin: 80px 0;
+}
+.all_works_link a {
+  text-decoration: none;
+}
+
+.all_works_link a:after {
+  background-color: #06050a;
+}
+
+.all_works_link a:before {
+  background-color: #06050a;
+}
+
+/* Breakpoints */
+@media only screen and (max-width: 320px) {
+}
+@media only screen and (max-width: 414px) {
+}
+@media only screen and (max-width: 767px) {
+  .home_cards {
+    flex-direction: column;
+  }
+  .right_card,
+  .left_card,
+  .cards_section .home_cards:nth-child(even) .right_card,
+  .cards_section .home_cards:nth-child(even) .left_card {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+}
+@media only screen and (max-width: 1279px) and (min-width: 1024px) {
+}
+@media only screen and (max-width: 1439px) and (min-width: 1280px) {
+}
+
+@media only screen and (max-width: 1509px) and (min-width: 1440px) {
+}
+@media only screen and (max-width: 1919px) and (min-width: 1510px) {
 }

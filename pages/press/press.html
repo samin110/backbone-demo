@@ -31,11 +31,9 @@
   </head>
 
   <body class="">
-    <header class="container-fluid px-5 custom-container">
+    <header class="container_section" id="navbar">
       <!-- place navbar here -->
-      <ul
-        class="nav py-4 d-flex border-bottom border-black justify-content-between w-100"
-      >
+      <ul class="nav_wrapper">
         <li class="nav-item d-flex align-items-center">
           <a class="active" href="/pages/home/home.html" aria-current="page">
             <img
@@ -45,11 +43,11 @@
           </a>
         </li>
 
-        <li class="d-flex align-items-center text-xl-start">
-          <ul class="d-flex align-items-center gap-5 nav fs-4 text-black">
+        <li class="nav_items_container">
+          <ul class="d-flex align-items-center gap-5 nav">
             <li>
               <a
-                class="nav-link text-black"
+                class="nav_item"
                 id="nav"
                 href="http://127.0.0.1:5500/pages/works/works.html"
               >
@@ -57,147 +55,313 @@
               </a>
             </li>
             <li>
-              <a
-                class="nav-link text-black"
-                id="nav"
-                href="../services/services.html"
-              >
+              <a class="nav_item" id="nav" href="../services/services.html">
                 SERVICES
               </a>
             </li>
             <li>
-              <a class="nav-link text-black" id="nav" href="../press/press.html"
-                >PRESS</a
-              >
+              <a class="nav_item" id="nav" href="../press/press.html">PRESS</a>
             </li>
             <li>
-              <a class="nav-link text-black" id="nav" href="#">AWARDS</a>
+              <a class="nav_item" id="nav" href="../awards/awards.html"
+                >AWARDS</a
+              >
             </li>
           </ul>
         </li>
+
+        <!-- Burger Menu Section -->
+        <!-- Burger Menu Icon -->
+        <div class="burger_icons_container" id="burger_menu">
+          <div class="first_child"></div>
+          <div class="second_child"></div>
+          <div class="third_child">
+            <div></div>
+          </div>
+        </div>
       </ul>
+      <div
+        class="divider"
+        id="animate"
+        data-animate-class="show_divider_animate"
+      ></div>
     </header>
 
-    <main class="container-fluid px-5 h-25">
-      <h1 class="heading">PUBLICATIONS</h1>
+    <!-- sidebar menu -->
+    <div class="drawer_menu_container" id="drawer_menu_container">
+      <div class="drawer_header">
+        <a class="active" href="/pages/home/home.html" aria-current="page">
+          <img src="https://backbonebranding.com/logo/logoLight.svg" />
+        </a>
 
-      <p class="context press-context">
-        Over the years we have been honored to appear on the pages of some of
-        the world’s most prestigious publications. Seeing our work acknowledged
-        by our peers is the greatest reward that we cherish deeply.
-      </p>
+        <button class="close_icon" id="close_drawer_menu">
+          <i class="bi bi-x"></i>
+        </button>
+      </div>
+
+      <div class="drawer_items">
+        <a
+          href=""
+          class="item_delay"
+          id="animate"
+          data-animate-class="show_fade_animate"
+          >works</a
+        >
+        <a
+          href=""
+          class="item_delay"
+          id="animate"
+          data-animate-class="show_fade_animate"
+          >services</a
+        >
+        <a
+          href=""
+          class="item_delay"
+          id="animate"
+          data-animate-class="show_fade_animate"
+          >awards</a
+        >
+        <a
+          href=""
+          class="item_delay"
+          id="animate"
+          data-animate-class="show_fade_animate"
+          >press</a
+        >
+      </div>
+      <div class="first_column">
+        <!-- contact info -->
+        <div class="contact_info">
+          <a
+            href=""
+            id="animate"
+            data-animate-class="show_fade_animate"
+            class="contact_item text_underline"
+            >info@backbonebranding.com</a
+          >
+          <a
+            href=""
+            id="animate"
+            data-animate-class="show_fade_animate"
+            class="contact_item text_underline"
+            >pr@backbonebranding.com</a
+          >
+          <a
+            href=""
+            id="animate"
+            data-animate-class="show_fade_animate"
+            class="contact_item text_underline"
+            >+ 374 91 366 008</a
+          >
+        </div>
+
+        <div class="drawer_icons">
+          <a href="">
+            <i
+              class="bi bi-facebook footer_icon"
+              id="animate"
+              data-animate-class="show_fade_animate"
+            ></i>
+          </a>
+          <a href=""
+            ><i
+              class="bi bi-behance footer_icon"
+              id="animate"
+              data-animate-class="show_fade_animate"
+            ></i
+          ></a>
+          <a href=""
+            ><i
+              class="bi bi-instagram footer_icon"
+              id="animate"
+              data-animate-class="show_fade_animate"
+            ></i
+          ></a>
+          <a href=""
+            ><i
+              class="bi bi-pinterest footer_icon"
+              id="animate"
+              data-animate-class="show_fade_animate"
+            ></i
+          ></a>
+          <a href=""
+            ><i
+              class="bi bi-linkedin footer_icon"
+              id="animate"
+              data-animate-class="show_fade_animate"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <main class="container_section">
+      <div class="overflow-hidden" id="title">
+        <h1 class="heading">PUBLICATIONS</h1>
+      </div>
+
+      <div class="overflow-hidden">
+        <p
+          class="header_text press-context item_delay"
+          id="animate"
+          data-animate-class="show_animate"
+        >
+          Over the years we have been honored to appear on the pages of some of
+          the world’s most prestigious publications. Seeing our work
+          acknowledged by our peers is the greatest reward that we cherish
+          deeply.
+        </p>
+      </div>
 
       <!-- Cards Section -->
-      <div class="d-flex align-items-center gap-5 press-cards-container">
-        <div class="press-card">
-          <div class="press-card-img-container">
-            <img
-              class="press-card-img"
-              src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2F3c95798ffac87a59bc00d3fbc0a9bc35.jpg&w=1920&q=75"
-            />
+      <div class="press_card_section">
+        <div class="press-cards-container">
+          <div
+            class="press-card"
+            id="animate"
+            data-animate-class="card_animate_press"
+          >
+            <div class="press-card-img-container">
+              <img
+                class="press-card-img"
+                src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2F3c95798ffac87a59bc00d3fbc0a9bc35.jpg&w=1920&q=75"
+              />
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <p class="card_title">ART QUARTER</p>
+              <p class="card_title">2016</p>
+            </div>
+
+            <div class="d-flex justify-content-end">
+              <a href="../post/post.html" class="press-card-link text_underline"
+                >view post</a
+              >
+            </div>
           </div>
 
-          <div class="d-flex justify-content-between align-items-center mt-5">
-            <p class="press-card-title">ART QUARTER</p>
-            <p class="press-card-title">2016</p>
-          </div>
+          <div
+            class="press-card"
+            id="animate"
+            data-animate-class="card_animate_press"
+          >
+            <div class="press-card-img-container">
+              <img
+                class="press-card-img"
+                src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2FTUFF_1_thumbnail_1138x962-min.jpg&w=1920&q=75"
+              />
+            </div>
 
-          <div class="d-flex justify-content-end">
-            <a href="../post/post.html" class="press-card-link">view post</a>
-          </div>
-        </div>
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <p class="card_title">ART QUARTER</p>
+              <p class="card_title">2018</p>
+            </div>
 
-        <div class="press-card">
-          <div class="press-card-img-container">
-            <img
-              class="press-card-img"
-              src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2FTUFF_1_thumbnail_1138x962-min.jpg&w=1920&q=75"
-            />
-          </div>
-
-          <div class="d-flex justify-content-between align-items-center mt-5">
-            <p class="press-card-title">ART QUARTER</p>
-            <p class="press-card-title">2018</p>
-          </div>
-
-          <div class="d-flex justify-content-end">
-            <a href="../post/post.html" class="press-card-link">view post</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="d-flex align-items-center gap-5 press-cards-container">
-        <div class="press-card">
-          <div class="press-card-img-container">
-            <img
-              class="press-card-img"
-              src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2Fe2b1c60a42128c30e586f5e1b33efcc0.jpg&w=1920&q=75"
-            />
-          </div>
-
-          <div class="d-flex justify-content-between align-items-center mt-5">
-            <p class="press-card-title">ART QUARTER</p>
-            <p class="press-card-title">2016</p>
-          </div>
-
-          <div class="d-flex justify-content-end">
-            <a href="../post/post.html" class="press-card-link">view post</a>
+            <div class="d-flex justify-content-end">
+              <a href="../post/post.html" class="press-card-link text_underline"
+                >view post</a
+              >
+            </div>
           </div>
         </div>
 
-        <div class="press-card">
-          <div class="press-card-img-container">
-            <img
-              class="press-card-img"
-              src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2Fceae42e0451e61f9518a4b6f431ea301.jpg&w=1920&q=75"
-            />
+        <div class="press-cards-container">
+          <div
+            class="press-card"
+            id="animate"
+            data-animate-class="card_animate_press"
+          >
+            <div class="press-card-img-container">
+              <img
+                class="press-card-img"
+                src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2Fe2b1c60a42128c30e586f5e1b33efcc0.jpg&w=1920&q=75"
+              />
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <p class="card_title">ART QUARTER</p>
+              <p class="card_title">2016</p>
+            </div>
+
+            <div class="d-flex justify-content-end">
+              <a href="../post/post.html" class="press-card-link text_underline"
+                >view post</a
+              >
+            </div>
           </div>
 
-          <div class="d-flex justify-content-between align-items-center mt-5">
-            <p class="press-card-title">ART QUARTER</p>
-            <p class="press-card-title">2018</p>
-          </div>
+          <div
+            class="press-card"
+            id="animate"
+            data-animate-class="card_animate_press"
+          >
+            <div class="press-card-img-container">
+              <img
+                class="press-card-img"
+                src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2Fceae42e0451e61f9518a4b6f431ea301.jpg&w=1920&q=75"
+              />
+            </div>
 
-          <div class="d-flex justify-content-end">
-            <a href="../post/post.html" class="press-card-link">view post</a>
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <p class="card_title">ART QUARTER</p>
+              <p class="card_title">2018</p>
+            </div>
+
+            <div class="d-flex justify-content-end">
+              <a href="../post/post.html" class="press-card-link text_underline"
+                >view post</a
+              >
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="d-flex align-items-center gap-5 press-cards-container">
-        <div class="press-card">
-          <div class="press-card-img-container">
-            <img
-              class="press-card-img"
-              src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2FTUFF_1_thumbnail_1138x962-min.jpg&w=1920&q=75"
-            />
+        <div class="press-cards-container">
+          <div
+            class="press-card"
+            id="animate"
+            data-animate-class="card_animate_press"
+          >
+            <div class="press-card-img-container">
+              <img
+                class="press-card-img"
+                src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2FTUFF_1_thumbnail_1138x962-min.jpg&w=1920&q=75"
+              />
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <p class="card_title">ART QUARTER</p>
+              <p class="card_title">2016</p>
+            </div>
+
+            <div class="d-flex justify-content-end">
+              <a href="../post/post.html" class="press-card-link text_underline"
+                >view post</a
+              >
+            </div>
           </div>
 
-          <div class="d-flex justify-content-between align-items-center mt-5">
-            <p class="press-card-title">ART QUARTER</p>
-            <p class="press-card-title">2016</p>
-          </div>
+          <div
+            class="press-card"
+            id="animate"
+            data-animate-class="card_animate_press"
+          >
+            <div class="press-card-img-container">
+              <img
+                class="press-card-img"
+                src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2FTUFF_1_thumbnail_1138x962-min.jpg&w=1920&q=75"
+              />
+            </div>
 
-          <div class="d-flex justify-content-end">
-            <a href="../post/post.html" class="press-card-link">view post</a>
-          </div>
-        </div>
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <p class="card_title">ART QUARTER</p>
+              <p class="card_title">2018</p>
+            </div>
 
-        <div class="press-card">
-          <div class="press-card-img-container">
-            <img
-              class="press-card-img"
-              src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2FTUFF_1_thumbnail_1138x962-min.jpg&w=1920&q=75"
-            />
-          </div>
-
-          <div class="d-flex justify-content-between align-items-center mt-5">
-            <p class="press-card-title">ART QUARTER</p>
-            <p class="press-card-title">2018</p>
-          </div>
-
-          <div class="d-flex justify-content-end">
-            <a href="../post/post.html" class="press-card-link">view post</a>
+            <div class="d-flex justify-content-end">
+              <a href="../post/post.html" class="press-card-link text_underline"
+                >view post</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -205,33 +369,115 @@
 
     <!-- Footer Section -->
     <footer class="footer">
-      <div class="bg-black px-5">
-        <div class="d-flex pt-5">
-          <!-- contact info -->
-          <div class="footer_links">
-            <a href="" class="footer_link">info@backbonebranding.com</a>
-            <a href="" class="footer_link">pr@backbonebranding.com</a>
-            <a href="" class="footer_link">+ 374 91 366 008</a>
+      <div class="bg-black">
+        <div class="footer_items_wrapper container_section">
+          <div class="first_column">
+            <!-- contact info -->
+            <div class="contact_info">
+              <a
+                href=""
+                class="contact_item text_underline"
+                id="animate"
+                data-animate-class="show_fade_animate"
+                >info@backbonebranding.com</a
+              >
+              <a
+                href=""
+                class="contact_item text_underline"
+                id="animate"
+                data-animate-class="show_fade_animate"
+                >pr@backbonebranding.com</a
+              >
+              <a
+                href=""
+                class="contact_item text_underline"
+                id="animate"
+                data-animate-class="show_fade_animate"
+                >+ 374 91 366 008</a
+              >
+            </div>
+
+            <div class="footer_container_icons">
+              <a href="">
+                <i
+                  class="bi bi-facebook footer_icon item_delay"
+                  id="animate"
+                  data-animate-class="show_fade_animate"
+                ></i>
+              </a>
+              <a href=""
+                ><i
+                  class="bi bi-behance footer_icon item_delay"
+                  id="animate"
+                  data-animate-class="show_fade_animate"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="bi bi-instagram footer_icon item_delay"
+                  id="animate"
+                  data-animate-class="show_fade_animate"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="bi bi-pinterest footer_icon item_delay"
+                  id="animate"
+                  data-animate-class="show_fade_animate"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="bi bi-linkedin footer_icon item_delay"
+                  id="animate"
+                  data-animate-class="show_fade_animate"
+                ></i
+              ></a>
+            </div>
           </div>
 
           <!-- nav items -->
-          <div class="footer_container_items d-flex gap-5">
-            <ul class="gap-5 d-flex">
-              <li class="footer_items d-flex flex-column me-5">
-                <a href="http://" class="footer_item">WORKS</a>
-                <a href="http://" class="footer_item">SERVICES</a>
-              </li>
+          <!-- <div class=""> -->
+          <ul class="second_column">
+            <li class="second_column_items">
+              <a
+                href="http://"
+                class="footer_item text_underline"
+                id="animate"
+                data-animate-class="show_fade_animate"
+                >WORKS</a
+              >
+              <a
+                href="http://"
+                class="footer_item text_underline"
+                id="animate"
+                data-animate-class="show_fade_animate"
+                >SERVICES</a
+              >
+            </li>
 
-              <li class="footer_items d-flex flex-column">
-                <a href="http://" class="footer_item">AWARDS</a>
-                <a href="http://" class="footer_item">PRESS</a>
-              </li>
-            </ul>
-          </div>
+            <li class="second_column_items">
+              <a
+                href="http://"
+                class="footer_item text_underline"
+                id="animate"
+                data-animate-class="show_fade_animate"
+                >AWARDS</a
+              >
+              <a
+                href="http://"
+                class="footer_item text_underline"
+                id="animate"
+                data-animate-class="show_fade_animate"
+                >PRESS</a
+              >
+            </li>
+          </ul>
+          <!-- </div> -->
         </div>
 
         <!-- Social Icons -->
-        <div class="footer_container_icons">
+        <!-- <div class="footer_container_icons">
           <a href="">
             <i class="bi bi-facebook footer_icons"></i>
           </a>
@@ -239,10 +485,12 @@
           <a href=""><i class="bi bi-instagram footer_icons"></i></a>
           <a href=""><i class="bi bi-pinterest footer_icons"></i></a>
           <a href=""><i class="bi bi-linkedin footer_icons"></i></a>
-        </div>
+        </div> -->
 
         <!-- Copyright section -->
-        <div class="d-flex justify-content-between copyright-section">
+        <div
+          class="d-flex justify-content-between copyright-section container_section"
+        >
           <p>© ALL RIGHTS RESERVED 2024</p>
           <p>BY CONCEPT STUDIO</p>
         </div>

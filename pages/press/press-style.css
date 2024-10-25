@@ -1,21 +1,30 @@
 .press-context {
   width: 70%;
   margin-bottom: 30px;
+  opacity: 0;
+}
+
+.press_card_section {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 8%;
+  margin-bottom: 700px;
 }
 
 .press-cards-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 300px;
-  margin-bottom: 300px;
+  gap: 10%;
 }
 
 .press-cards-container > :nth-child(even) {
-  transform: translateY(300px);
+  transform: translateY(250px);
 }
 
 .press-card {
   flex: 1;
+  opacity: 0;
 }
 
 .press-card-img-container {
@@ -31,13 +40,83 @@
 .press-card-title {
   font-family: gilroy-medium;
   font-size: 24px;
+  color: #06050a;
 }
 
 .press-card-link {
-  margin-top: 100px;
-  font-size: 40px;
+  margin-top: 10px;
+  font-size: 32px;
   color: #06050a;
-  font-family: gilroy-semibold;
+  font-family: gilroy-medium;
   text-transform: uppercase;
   width: fit-content;
+  text-decoration: none;
+}
+
+.press-card-link:after {
+  background-color: #06050a;
+}
+
+.press-card-link:before {
+  background-color: #06050a;
+}
+.card_animate_press {
+  animation: card_animate_press 0.35s ease-in-out forwards;
+}
+
+@media only screen and (max-width: 320px) {
+  .press-card-link {
+    font-size: 14px !important;
+  }
+}
+@media only screen and (max-width: 414px) {
+}
+@media only screen and (max-width: 767px) {
+  .press-card-link {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .press-cards-container {
+    grid-template-columns: 1fr;
+  }
+  .press_card_section {
+    row-gap: 4%;
+    margin-bottom: 500px;
+  }
+  .press-cards-container > :nth-child(even) {
+    transform: translateY(0px);
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .press-card-link {
+    font-size: 20px;
+  }
+
+  .card_animate_press {
+    animation: card_animate 0.35s ease-in-out forwards;
+  }
+}
+@media only screen and (max-width: 1279px) and (min-width: 1024px) {
+  .press-card-link {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1439px) and (min-width: 1280px) {
+}
+
+@media only screen and (max-width: 1509px) and (min-width: 1440px) {
+}
+@media only screen and (max-width: 1919px) and (min-width: 1510px) {
+}
+
+@keyframes card_animate_press {
+  0% {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(250);
+  }
 }

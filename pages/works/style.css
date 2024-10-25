@@ -19,7 +19,11 @@
   height: 1px;
   width: 100%;
   background-color: #707070;
-  animation: divider_animate 0.8s ease-in-out;
+  opacity: 0;
+}
+
+.show_divider_animate {
+  animation: divider_animate 0.8s ease-in-out forwards;
 }
 
 .nav_items_container {
@@ -35,6 +39,7 @@
   flex-direction: column;
   row-gap: 5px;
   align-items: end;
+  cursor: pointer;
 }
 .burger_icons_container .first_child {
   width: 50%;
@@ -165,14 +170,14 @@
 }
 
 .show_animate {
-  animation: card_animate 0.4s ease-in-out forwards;
+  animation: card_animate 0.35s ease-in-out forwards;
 }
 
 .card_title {
-  font-family: gilroy-medium;
+  font-family: gilroy-semibold;
   text-decoration: none;
   width: fit-content;
-  font-size: 24px;
+  font-size: 20px;
   color: #06050a;
   text-transform: uppercase;
   position: relative;
@@ -752,7 +757,7 @@ footer {
 @keyframes card_animate {
   0% {
     opacity: 0;
-    transform: translateY(300px);
+    transform: translateY(200px);
   }
   100% {
     opacity: 1;

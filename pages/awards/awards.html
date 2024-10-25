@@ -10,7 +10,7 @@
     />
 
     <link rel="stylesheet" href="../../global.css" />
-    <link rel="stylesheet" href="./press-style.css" />
+    <link rel="stylesheet" href="../press/press-style.css" />
     <link rel="stylesheet" href="../home/home-style.css" />
     <link rel="stylesheet" href="../post/post-style.css" />
     <link rel="stylesheet" href="../services/services-style.css" />
@@ -32,11 +32,9 @@
   </head>
 
   <body class="">
-    <header class="container-fluid px-5">
+    <header class="container_section" id="navbar">
       <!-- place navbar here -->
-      <ul
-        class="nav py-3 d-flex justify-content-between w-100 border-bottom border-black"
-      >
+      <ul class="nav_wrapper">
         <li class="nav-item d-flex align-items-center">
           <a class="active" href="/pages/home/home.html" aria-current="page">
             <img
@@ -46,13 +44,11 @@
           </a>
         </li>
 
-        <li class="d-flex align-items-center text-xl-start">
-          <ul
-            class="d-flex align-items-center gap-5 nav nav_item fs-5 text-black"
-          >
+        <li class="nav_items_container">
+          <ul class="d-flex align-items-center gap-5 nav">
             <li>
               <a
-                class="nav-link text-black"
+                class="nav_item"
                 id="nav"
                 href="http://127.0.0.1:5500/pages/works/works.html"
               >
@@ -60,44 +56,188 @@
               </a>
             </li>
             <li>
-              <a
-                class="nav-link text-black"
-                id="nav"
-                href="../services/services.html"
-              >
+              <a class="nav_item" id="nav" href="../services/services.html">
                 SERVICES
               </a>
             </li>
             <li>
-              <a class="nav-link text-black" id="nav" href="../press/press.html"
-                >PRESS</a
-              >
+              <a class="nav_item" id="nav" href="../press/press.html">PRESS</a>
             </li>
             <li>
-              <a class="nav-link text-black" id="nav" href="#">AWARDS</a>
+              <a class="nav_item" id="nav" href="../awards/awards.html"
+                >AWARDS</a
+              >
             </li>
           </ul>
         </li>
+
+        <!-- Burger Menu Section -->
+        <!-- Burger Menu Icon -->
+        <div class="burger_icons_container" id="burger_menu">
+          <div class="first_child"></div>
+          <div class="second_child"></div>
+          <div class="third_child">
+            <div></div>
+          </div>
+        </div>
       </ul>
+      <div
+        class="divider my-0"
+        id="animate"
+        data-animate-class="show_divider_animate"
+      ></div>
     </header>
 
+    <!-- sidebar menu -->
+    <div class="drawer_menu_container" id="drawer_menu_container">
+      <div class="drawer_header">
+        <a class="active" href="/pages/home/home.html" aria-current="page">
+          <img src="https://backbonebranding.com/logo/logoLight.svg" />
+        </a>
+
+        <button class="close_icon" id="close_drawer_menu">
+          <i class="bi bi-x"></i>
+        </button>
+      </div>
+
+      <div class="drawer_items">
+        <a
+          href=""
+          class="item_delay"
+          id="animate"
+          data-animate-class="show_fade_animate"
+          >works</a
+        >
+        <a
+          href=""
+          class="item_delay"
+          id="animate"
+          data-animate-class="show_fade_animate"
+          >services</a
+        >
+        <a
+          href=""
+          class="item_delay"
+          id="animate"
+          data-animate-class="show_fade_animate"
+          >awards</a
+        >
+        <a
+          href=""
+          class="item_delay"
+          id="animate"
+          data-animate-class="show_fade_animate"
+          >press</a
+        >
+      </div>
+
+      <div class="first_column">
+        <!-- contact info -->
+        <div class="contact_info">
+          <a href="" class="contact_item text_underline"
+            >info@backbonebranding.com</a
+          >
+          <a href="" class="contact_item text_underline"
+            >pr@backbonebranding.com</a
+          >
+          <a href="" class="contact_item text_underline">+ 374 91 366 008</a>
+        </div>
+
+        <div class="drawer_icons">
+          <a href="">
+            <i class="bi bi-facebook footer_icon"></i>
+          </a>
+          <a href=""><i class="bi bi-behance footer_icon"></i></a>
+          <a href=""><i class="bi bi-instagram footer_icon"></i></a>
+          <a href=""><i class="bi bi-pinterest footer_icon"></i></a>
+          <a href=""><i class="bi bi-linkedin footer_icon"></i></a>
+        </div>
+      </div>
+    </div>
+
     <!-- Main Section -->
-    <main class="container-fluid px-5 h-25">
+    <main class="container_section">
       <!-- Header Section -->
-      <div class="header_container d-flex align-items-center w-100 gap-5">
+
+      <div
+        class="header_container d-flex align-items-center w-100 gap-5"
+        id="title"
+      >
         <div class="left_part">
-          <h1 class="heading home-heading mb-3 mt-0">awards</h1>
-          <p class="context -mb-4">
-            Participation in award shows is not our ultimate goal but a way to
-            prove whether our work is relevant and effective. Awards also help
-            our clients gain international recognition and enter new markets.
-          </p>
+          <div class="overflow-hidden">
+            <h1 class="heading home-heading mb-3 mt-0">awards</h1>
+            <div class="right_part d-flex">
+              <div class="overflow-hidden">
+                <p
+                  class="counter item_delay"
+                  id="animate"
+                  data-animate-class="show_animate"
+                >
+                  1
+                </p>
+              </div>
+              <div class="overflow-hidden">
+                <p
+                  class="counter item_delay"
+                  id="animate"
+                  data-animate-class="show_animate"
+                >
+                  7
+                </p>
+              </div>
+              <div class="overflow-hidden">
+                <p
+                  class="counter item_delay"
+                  id="animate"
+                  data-animate-class="show_animate"
+                >
+                  7
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-hidden">
+            <p
+              class="header_text -mb-4 item_delay"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              Participation in award shows is not our ultimate goal but a way to
+              prove whether our work is relevant and effective. Awards also help
+              our clients gain international recognition and enter new markets.
+            </p>
+          </div>
         </div>
 
         <div class="right_part d-flex">
-          <p class="counter">1</p>
-          <p class="counter">7</p>
-          <p class="counter">7</p>
+          <div class="overflow-hidden">
+            <p
+              class="counter item_delay"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              1
+            </p>
+          </div>
+          <div class="overflow-hidden">
+            <p
+              class="counter item_delay"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              7
+            </p>
+          </div>
+          <div class="overflow-hidden">
+            <p
+              class="counter item_delay"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              7
+            </p>
+          </div>
         </div>
       </div>
 
@@ -107,10 +247,10 @@
       <!-- Title Section -->
 
       <div class="w-100">
-        <div class="lh-sm">
-          <p class="heading home-heading mb-0">GLOBALLY RECOGNIZED</p>
-          <p class="heading home-heading mb-0 mt-0">BEST</p>
-          <p class="heading home-heading mb-0 mt-0">DESIGN AGENCY.</p>
+        <div class="big_title_container">
+          <p class="big_title">GLOBALLY RECOGNIZED</p>
+          <p class="big_title">BEST</p>
+          <p class="big_title">DESIGN AGENCY.</p>
         </div>
       </div>
 
