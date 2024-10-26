@@ -116,3 +116,49 @@ items.forEach((item, index) => {
 
   delay += 0.08;
 });
+
+// ********************* Loading For Initial Page  ************************
+
+const loading = document.querySelector(".loading");
+const loading_wrapper = document.querySelector(".loading_wrapper");
+const container_page = document.querySelector(".container_page");
+
+document.onreadystatechange = function (e) {
+  if (document.readyState !== "complete") {
+    const loading_progress_bar = document.querySelector(
+      ".loading_progress_bar"
+    );
+    const loading_percentage = document.querySelector(".loading_percentage");
+    let progress = 0;
+
+    // Function to simulate loading progress
+    function updateLoadingPercentage() {
+      // Simulate loading by incrementing the percentage
+      const interval = setInterval(() => {
+        progress += 1; // Increase by a random value between 1 and 5
+        if (progress >= 100) {
+          progress = 100; // Cap the progress at 100%
+          clearInterval(interval);
+        }
+
+        // Update the percentage text
+        loading_percentage
+          ? (loading_percentage.textContent = `${progress}%`)
+          : null;
+        loading_progress_bar
+          ? (loading_progress_bar.style.width = `${progress}%`)
+          : null;
+      }, 30);
+    }
+
+    // Start updating loading percentage
+    updateLoadingPercentage();
+  } else {
+    setTimeout(() => {
+      container_page ? (container_page.style.display = "block") : null;
+      loading_wrapper
+        ? (loading_wrapper.style.transform = "translateY(-3000px)")
+        : null;
+    }, 2000);
+  }
+};

@@ -102,6 +102,10 @@
   color: white;
 }
 
+.container_page {
+  display: none;
+}
+
 .drawer_items {
   margin-top: 24px;
   margin-bottom: 40px;
@@ -507,6 +511,7 @@ footer {
 
   .cards_container {
     grid-template-columns: 1fr;
+    row-gap: 2%;
   }
 
   .footer_link {
