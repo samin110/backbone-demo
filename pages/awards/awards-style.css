@@ -19,6 +19,10 @@
   flex: 1;
 }
 
+.awards_header_text {
+  font-family: gilroy-medium;
+}
+
 .counter {
   font-family: gilroy-medium;
   font-weight: 500;
@@ -47,6 +51,20 @@
   font-size: 24px;
   color: var(--main-color);
   margin-top: 5px;
+  width: 75%;
+}
+
+.agency_wrapper,
+.table_wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.agency_row {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid red;
 }
 
 .agency_year {
@@ -65,6 +83,7 @@
   width: 28%;
   max-width: 28%;
   margin-right: 40px;
+  color: var(--main-color);
 }
 
 .agency_text {
@@ -87,8 +106,8 @@
 }
 
 .agency_logo img {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
 }
 
 .divider {
@@ -96,6 +115,13 @@
   height: 1px;
   width: 100%;
   margin: 30px 0;
+}
+
+.awards_divider {
+  position: absolute !important;
+  bottom: 0;
+  left: 0;
+  width: 100% !important;
 }
 
 .table_awards_wrapper {
@@ -145,7 +171,7 @@
 .table_awards_body {
   display: flex;
   width: 100%;
-  align-items: center;
+  align-items: start;
   font-family: gilroy-medium;
   font-size: 18px;
   color: var(--main-color);
@@ -161,13 +187,17 @@
 }
 
 .load_more_link {
-  font-size: 60px;
+  font-size: 64px;
   font-family: gilroy-medium;
   color: var(--main-color);
 }
 
-/* Card */
+.load_more_link:after,
+.load_more:before {
+  background-color: #06050a;
+}
 
+/* Card */
 .awards_card_container {
   width: 33.3%;
   padding: 0 15px;
@@ -215,10 +245,37 @@
   .big_title {
     font-size: 40px !important;
   }
+  .agency_text {
+    font-size: 12px !important;
+  }
+  .agency_logo img {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .table_awards_header_cell {
+    font-size: 12px !important;
+  }
+  .table_awards_body {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+  }
+
+  .load_more_link {
+    font-size: 28px !important;
+  }
 }
 @media only screen and (max-width: 414px) and (min-width: 321px) {
   .big_title {
     font-size: 46px !important;
+  }
+
+  .agency_logo img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .load_more_link {
+    font-size: 26px !important;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -238,6 +295,81 @@
   .right_part {
     flex: 0;
   }
+  .text_introduce {
+    font-size: 14px;
+    width: 100% !important;
+  }
+
+  .agency_year {
+    font-size: 32px;
+    min-width: 25%;
+    margin-right: 15px;
+  }
+
+  .agency_title {
+    font-size: 16px;
+    min-width: 52%;
+    margin-right: 20px;
+  }
+
+  .agency_text {
+    font-size: 14px;
+    min-width: 110%;
+    margin-right: 40px;
+  }
+
+  .agency_logo {
+    min-width: 23%;
+  }
+
+  .agency_logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .table_awards_header_cell {
+    font-size: 14px;
+  }
+
+  .table_awards_body {
+    font-size: 14px;
+  }
+  .table_year_column {
+    max-width: 22%;
+    width: 100%;
+    padding-right: 32px;
+    min-width: 22%;
+  }
+
+  .table_awards_column {
+    max-width: 47.6%;
+    min-width: 47.6%;
+    width: 100%;
+    padding-right: 32px;
+  }
+
+  .table_category_column {
+    max-width: 37.9%;
+    min-width: 37.9%;
+    width: 100%;
+    padding-right: 40px;
+  }
+
+  .table_position_column {
+    max-width: 39.6%;
+    min-width: 39.6%;
+    width: 100%;
+    padding-right: 40px;
+  }
+
+  .table_project_name_column {
+    max-width: 39%;
+    min-width: 39%;
+    width: 100%;
+    padding-right: 24px;
+  }
+  .load_more_link {
+    font-size: 32px;
+  }
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .counter {
@@ -245,6 +377,80 @@
   }
   .big_title {
     font-size: 60px;
+  }
+  .text_introduce {
+    font-size: 18px;
+  }
+  .agency_year {
+    font-size: 48px;
+    min-width: 17%;
+    margin-right: 15px;
+  }
+
+  .agency_title {
+    font-size: 18px;
+    min-width: 30%;
+    margin-right: 20px;
+  }
+
+  .agency_text {
+    font-size: 14px;
+    min-width: 72%;
+    margin-right: 40px;
+  }
+
+  .agency_logo {
+    min-width: 13%;
+  }
+
+  .agency_logo img {
+    width: 70px;
+    height: 70px;
+  }
+  .table_awards_header_cell {
+    font-size: 14px;
+  }
+
+  .table_awards_body {
+    font-size: 14px;
+  }
+
+  .table_year_column {
+    max-width: 12.3%;
+    min-width: 12.3%;
+    width: 100%;
+    padding-right: 48px;
+  }
+
+  .table_awards_column {
+    max-width: 27.7%;
+    min-width: 27.7%;
+    width: 100%;
+    padding-right: 32px;
+  }
+
+  .table_category_column {
+    max-width: 20.9%;
+    min-width: 20.9%;
+    width: 100%;
+    padding-right: 40px;
+  }
+
+  .table_position_column {
+    max-width: 21.9%;
+    min-width: 27.9%;
+    padding-right: 40px;
+    width: 100%;
+  }
+
+  .table_project_name_column {
+    max-width: calc(100% - 12.3% - 27.7% - 20.9% - 21.9%);
+    min-width: calc(100% - 12.3% - 27.7% - 20.9% - 21.9%);
+    width: 100%;
+    padding-right: 0px;
+  }
+  .load_more_link {
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 1279px) and (min-width: 1024px) {
@@ -254,16 +460,229 @@
   .big_title {
     font-size: 64px;
   }
+  .text_introduce {
+    font-size: 18px;
+  }
+
+  .agency_year {
+    font-size: 48px;
+  }
+  .agency_title {
+    font-size: 18px;
+  }
+  .agency_text {
+    font-size: 14px;
+  }
+  .agency_year {
+    max-width: 11%;
+    margin-right: 25px;
+    width: 100%;
+  }
+
+  .agency_title {
+    max-width: 21%;
+    margin-right: 30px;
+    width: 100%;
+  }
+
+  .agency_text {
+    max-width: 60%;
+    margin-right: 50px;
+    width: 100%;
+  }
+
+  .agency_logo {
+    max-width: calc(100% - 11% - 21% - 60%);
+  }
+
+  .agency_logo img {
+    width: 55px;
+    height: 55px;
+  }
+  .table_awards_header_cell {
+    font-size: 14px;
+  }
+
+  .table_awards_body {
+    font-size: 14px;
+  }
+
+  .table_year_column {
+    max-width: 11.4%;
+    min-width: 11.4%;
+    width: 100%;
+    padding-right: 72px;
+  }
+
+  .table_awards_column {
+    max-width: 24.9%;
+    min-width: 24.9%;
+    width: 100%;
+    padding-right: 48px;
+  }
+
+  .table_category_column {
+    max-width: 28.8%;
+    min-width: 28.8%;
+    width: 100%;
+    padding-right: 88px;
+  }
+
+  .table_position_column {
+    max-width: 21.3%;
+    min-width: 21.3%;
+    width: 100%;
+    padding-right: 48px;
+  }
+
+  .table_project_name_column {
+    max-width: calc(100% - 11.4% - 24.9% - 28.8% - 21.3%);
+    min-width: calc(100% - 11.4% - 24.9% - 28.8% - 21.3%);
+    width: 100%;
+    padding-right: 0px;
+  }
+  .load_more_link {
+    font-size: 44px;
+  }
 }
+
 @media only screen and (max-width: 1439px) and (min-width: 1280px) {
   .counter {
     font-size: 248px;
+  }
+  .text_introduce {
+    font-size: 18px;
+  }
+
+  .agency_year {
+    max-width: 11%;
+    margin-right: 15px;
+    width: 100%;
+  }
+
+  .agency_title {
+    max-width: 21%;
+    margin-right: 20px;
+    width: 100%;
+  }
+
+  .agency_text {
+    max-width: 60%;
+    margin-right: 40px;
+    width: 100%;
+  }
+
+  .agency_logo {
+    max-width: calc(100% - 11% - 21% - 60%);
+  }
+
+  .agency_logo img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .table_year_column {
+    max-width: 7.3%;
+    min-width: 7.3%;
+    width: 100%;
+    padding-right: 24px;
+  }
+
+  .table_awards_column {
+    max-width: 22.9%;
+    min-width: 22.9%;
+    width: 100%;
+    padding-right: 64px;
+  }
+
+  .table_category_column {
+    max-width: 25.6%;
+    min-width: 25.6%;
+    width: 100%;
+    padding-right: 104px;
+  }
+
+  .table_position_column {
+    max-width: 21.7%;
+    min-width: 21.7%;
+    width: 100%;
+    padding-right: 80px;
+  }
+
+  .table_project_name_column {
+    max-width: 18.2%;
+    min-width: 18.2%;
+    width: 100%;
+    padding-right: 56px;
+  }
+  .load_more_link {
+    font-size: 60px;
   }
 }
 
 @media only screen and (max-width: 1509px) and (min-width: 1440px) {
   .counter {
     font-size: 248px;
+  }
+
+  .agency_year {
+    max-width: 11%;
+    margin-right: 15px;
+    width: 100%;
+  }
+
+  .agency_title {
+    max-width: 23%;
+    margin-right: 20px;
+    width: 100%;
+  }
+
+  .agency_text {
+    max-width: 58%;
+    margin-right: 40px;
+    width: 100%;
+  }
+
+  .agency_logo {
+    max-width: calc(100% - 11% - 23% - 58%);
+  }
+
+  .table_year_column {
+    max-width: 7.3%;
+    min-width: 7.3%;
+    width: 100%;
+    padding-right: 24px;
+  }
+
+  .table_awards_column {
+    max-width: 22.9%;
+    min-width: 22.9%;
+    width: 100%;
+    padding-right: 64px;
+  }
+
+  .table_category_column {
+    max-width: 25.6%;
+    min-width: 25.6%;
+    width: 100%;
+    padding-right: 104px;
+  }
+
+  .table_position_column {
+    max-width: 21.7%;
+    min-width: 21.7%;
+    width: 100%;
+    padding-right: 80px;
+  }
+
+  .table_project_name_column {
+    max-width: 18.2%;
+    min-width: 18.2%;
+    width: 100%;
+    padding-right: 56px;
+  }
+  .load_more_link {
+    font-size: 60px;
   }
 }
 @media only screen and (max-width: 1919px) and (min-width: 1510px) {
