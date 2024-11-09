@@ -95,7 +95,7 @@ function appearAnimation() {
         }
       });
     },
-    { threshold: 0.2 }
+    { threshold: 0.8 }
   );
 
   includeAnimation.forEach((element) => {
@@ -148,7 +148,7 @@ document.onreadystatechange = function (e) {
         loading_progress_bar
           ? (loading_progress_bar.style.width = `${progress}%`)
           : null;
-      }, 30);
+      }, 15);
     }
 
     // Start updating loading percentage
@@ -159,6 +159,6 @@ document.onreadystatechange = function (e) {
       loading_wrapper
         ? (loading_wrapper.style.transform = "translateY(-3000px)")
         : null;
-    }, 2000);
+    }, 1000);
   }
 };

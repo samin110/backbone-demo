@@ -37,12 +37,15 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 2%;
+  overflow: hidden;
 }
 
 .big_title {
   font-family: gilroy-medium;
   font-size: 104px;
   color: var(--main-color);
+  display: block;
+  opacity: 0;
 }
 
 .text_introduce {
@@ -52,6 +55,7 @@
   color: var(--main-color);
   margin-top: 5px;
   width: 75%;
+  opacity: 0;
 }
 
 .agency_wrapper,
@@ -61,10 +65,8 @@
 }
 
 .agency_row {
-  position: relative;
-  display: inline-block;
   width: 100%;
-  border-bottom: 1px solid red;
+  opacity: 0;
 }
 
 .agency_year {
@@ -144,6 +146,7 @@
 .table_awards_column {
   width: 23.2%;
   padding-right: 64px;
+  transition: all 1s;
 }
 
 .table_category_column {
@@ -168,6 +171,14 @@
   color: var(--main-color);
 }
 
+.wrapper {
+  height: fit-content;
+  overflow: hidden;
+}
+.awards_title {
+  opacity: 0;
+}
+
 .table_awards_body {
   display: flex;
   width: 100%;
@@ -177,6 +188,42 @@
   color: var(--main-color);
   text-transform: uppercase;
   margin: 18px 0;
+  overflow: hidden;
+  opacity: 0;
+  position: relative;
+}
+.show_fade_table {
+  animation: fade 1.4s ease-out forwards;
+}
+
+.table_awards_body:hover .table_icon {
+  visibility: visible;
+  opacity: 1;
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1);
+}
+
+.table_awards_body:hover .table_awards_column {
+  animation: up 0.5s ease-in-out;
+  transition: animation 0.5s;
+}
+
+.table_icon {
+  visibility: hidden;
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: -40px;
+  opacity: 0;
+  transform: scale(0.2);
+  transition: transform 0.4s ease-in-out;
+}
+.table_icon i {
+  rotate: -45deg;
+  font-size: 100px;
+  color: #06050a;
 }
 
 .table_row_divider {
@@ -190,6 +237,9 @@
   font-size: 64px;
   font-family: gilroy-medium;
   color: var(--main-color);
+  cursor: pointer;
+  animation-duration: 0.7s;
+  opacity: 0;
 }
 
 .load_more_link:after,
@@ -198,6 +248,12 @@
 }
 
 /* Card */
+.awards_cards_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
 .awards_card_container {
   width: 33.3%;
   padding: 0 15px;
@@ -239,6 +295,10 @@
   font-weight: 400;
   margin-top: 25px;
 }
+.ranking_text_wrapper {
+  gap: 12px;
+  line-height: 1;
+}
 
 /* Breakpoints */
 @media only screen and (max-width: 320px) {
@@ -263,6 +323,21 @@
   .load_more_link {
     font-size: 28px !important;
   }
+  .awards_card_title {
+    font-size: 28px !important;
+  }
+  .awards_card_sub_title {
+    font-size: 14px !important;
+  }
+
+  .awards_card_context {
+    font-size: 12px !important;
+  }
+
+  .awards_card_logo {
+    width: 53px !important;
+    height: 53px !important;
+  }
 }
 @media only screen and (max-width: 414px) and (min-width: 321px) {
   .big_title {
@@ -276,6 +351,11 @@
 
   .load_more_link {
     font-size: 26px !important;
+  }
+
+  .awards_card_logo {
+    width: 65px !important;
+    height: 65px !important;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -370,6 +450,31 @@
   .load_more_link {
     font-size: 32px;
   }
+
+  .awards_card_title {
+    font-size: 24px;
+  }
+
+  .awards_card_sub_title {
+    font-size: 20px;
+  }
+
+  .awards_card_context {
+    font-size: 14px;
+  }
+
+  .awards_card_logo {
+    width: 135px;
+    height: 135px;
+  }
+
+  .awards_card_container {
+    width: 100%;
+    padding: 0 5px;
+  }
+  .table_icon {
+    display: none;
+  }
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .counter {
@@ -451,6 +556,24 @@
   }
   .load_more_link {
     font-size: 40px;
+  }
+
+  .awards_card_title {
+    font-size: 28px;
+  }
+  .awards_card_sub_title {
+    font-size: 20px;
+  }
+  .awards_card_context {
+    font-size: 14px;
+  }
+
+  .awards_card_container {
+    width: 50%;
+    padding: 0 5px;
+  }
+  .table_icon {
+    display: none;
   }
 }
 @media only screen and (max-width: 1279px) and (min-width: 1024px) {
@@ -544,8 +667,21 @@
   .load_more_link {
     font-size: 44px;
   }
-}
+  .awards_card_sub_title {
+    font-size: 20px;
+  }
+  .awards_card_context {
+    font-size: 14px;
+  }
 
+  .awards_card_logo {
+    width: 96px;
+    height: 96px;
+  }
+  .table_icon {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1439px) and (min-width: 1280px) {
   .counter {
     font-size: 248px;
@@ -618,6 +754,17 @@
   .load_more_link {
     font-size: 60px;
   }
+  .awards_card_title {
+    font-size: 28px;
+  }
+
+  .awards_card_logo {
+    width: 96px;
+    height: 96px;
+  }
+  .table_icon {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1509px) and (min-width: 1440px) {
@@ -684,6 +831,23 @@
   .load_more_link {
     font-size: 60px;
   }
+
+  .awards_card_logo {
+    width: 96px;
+    height: 96px;
+  }
+  .table_icon {
+    display: none;
+  }
 }
 @media only screen and (max-width: 1919px) and (min-width: 1510px) {
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
 }
