@@ -165,8 +165,8 @@
 }
 .card_container {
   opacity: 0;
-  transform: translateY(200px);
-  overflow: hidden;
+  /* transform: translateY(200px); */
+  /* overflow: hidden; */
 }
 
 .cards_container :last-child .card_container:last-child {

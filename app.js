@@ -148,7 +148,7 @@ document.onreadystatechange = function (e) {
         loading_progress_bar
           ? (loading_progress_bar.style.width = `${progress}%`)
           : null;
-      }, 15);
+      });
     }
 
     // Start updating loading percentage

@@ -165,7 +165,13 @@
       >
         <div class="left_part">
           <div class="overflow-hidden">
-            <h1 class="heading home-heading mb-3 mt-0">awards</h1>
+            <h1
+              class="heading home-heading mb-3 mt-0"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              awards
+            </h1>
             <div class="right_part d-flex">
               <div class="overflow-hidden">
                 <p
@@ -332,11 +338,11 @@
                 src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2FAdc.png&w=1920&q=75"
               />
             </div>
-            <div
+            <!-- <div
               class="divider awards_divider"
               id="animate"
               data-animate-class="show_divider_animate"
-            ></div>
+            ></div> -->
           </div>
         </div>
       </div>
@@ -472,16 +478,56 @@
       <div>
         <div class="w-100 d-flex flex-wrap">
           <div class="d-flex flex-wrap ranking_text_wrapper">
-            <p class="heading home-heading mb-0 mt-0">On</p>
-            <p class="heading home-heading mb-0 mt-0">top</p>
-            <p class="heading home-heading mb-0 mt-0">of</p>
-            <p class="heading home-heading mb-0 mt-0">the</p>
-            <p class="heading home-heading mb-0 mt-0">world's</p>
-            <p class="heading home-heading mb-0 mt-0">rankings.</p>
+            <p
+              class="heading home-heading mb-0 mt-0"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              On
+            </p>
+            <p
+              class="heading home-heading mb-0 mt-0"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              top
+            </p>
+            <p
+              class="heading home-heading mb-0 mt-0"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              of
+            </p>
+            <p
+              class="heading home-heading mb-0 mt-0"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              the
+            </p>
+            <p
+              class="heading home-heading mb-0 mt-0"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              world's
+            </p>
+            <p
+              class="heading home-heading mb-0 mt-0"
+              id="animate"
+              data-animate-class="show_animate"
+            >
+              rankings.
+            </p>
           </div>
         </div>
 
-        <p class="context text-uppercase w-75 text_introduce mt-3">
+        <p
+          class="context text-uppercase w-75 text_introduce my-5"
+          id="animate"
+          data-animate-class="show_animate"
+        >
           We are humbled to be listed alongside the world’s best branding
           agencies.
         </p>
@@ -489,7 +535,11 @@
 
       <!-- Cards Section -->
       <div class="awards_cards_wrapper">
-        <div class="awards_card_container">
+        <div
+          class="awards_card_container"
+          id="animate"
+          data-animate-class="show_fade_table"
+        >
           <div class="awards_card_logo">
             <img
               src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2Fpentawards_300.png&w=1920&q=75"
@@ -506,7 +556,11 @@
           </p>
         </div>
 
-        <div class="awards_card_container">
+        <div
+          class="awards_card_container"
+          id="animate"
+          data-animate-class="show_fade_table"
+        >
           <div class="awards_card_logo">
             <img
               src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2F1.png&w=2048&q=75"
@@ -524,7 +578,11 @@
           </p>
         </div>
 
-        <div class="awards_card_container">
+        <div
+          class="awards_card_container"
+          id="animate"
+          data-animate-class="show_fade_table"
+        >
           <div class="awards_card_logo">
             <img
               src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2Fpentawards_300.png&w=1920&q=75"
@@ -544,7 +602,11 @@
           </p>
         </div>
 
-        <div class="awards_card_container">
+        <div
+          class="awards_card_container"
+          id="animate"
+          data-animate-class="show_fade_table"
+        >
           <div class="awards_card_logo">
             <img
               src="https://backbonebranding.com/_next/image/?url=https%3A%2F%2Fapi.backbonebranding.com%2Fstorage%2FAdc.png&w=2048&q=75"
@@ -694,6 +756,17 @@
         </div>
       </div>
     </footer>
+
+    <!-- Initial Page Loading -->
+    <div class="loading_wrapper">
+      <div class="loading_items">
+        <p class="loading_text">Backbone</p>
+        <div class="progress_container">
+          <div class="loading_progress_bar"></div>
+        </div>
+        <div class="loading_percentage"></div>
+      </div>
+    </div>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script

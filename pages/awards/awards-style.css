@@ -257,6 +257,8 @@
 .awards_card_container {
   width: 33.3%;
   padding: 0 15px;
+  animation-duration: 0.6s;
+  opacity: 0;
 }
 
 .awards_card_logo {
