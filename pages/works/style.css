@@ -145,7 +145,7 @@
   font-size: 124px;
   color: #06050a;
   font-family: gilroy-medium;
-  animation: card_animate 0.4s ease-in-out forwards;
+  /* animation: card_animate 0.4s ease-in-out forwards; */
 }
 
 .card_subjects {
